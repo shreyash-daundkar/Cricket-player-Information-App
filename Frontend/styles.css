@@ -1,28 +1,51 @@
-.container {
-    width: 80%;
-    margin: 2em auto;
+body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-input, textarea, button {
-    margin-bottom: 1em;
-    padding: 0.5em;
+h2 {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-#searchResults {
-    margin-top: 1em;
+input[type="text"],
+input[type="number"],
+textarea,
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
 }
 
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
 
 .player-result {
-    border: 1px solid #ccc;
-    padding: 1em;
-    margin: 1em 0;
+    border: 1px solid #eee;
+    padding: 10px;
+    margin-top: 20px;
 }
 
 .player-result h3 {
@@ -30,13 +53,14 @@ input, textarea, button {
 }
 
 .player-result button {
-    background-color: #4CAF50;
+    background-color: #007BFF;
     color: white;
-    padding: 0.5em 1em;
+    padding: 5px 15px;
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .player-result button:hover {
-    background-color: #45a049;
+    background-color: #0056b3;
 }

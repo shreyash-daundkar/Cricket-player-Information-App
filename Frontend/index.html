@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Players</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Add a Cricket Player</h2>
+    <form id="playerForm">
+        <input type="text" id="name" placeholder="Player Name" required>
+        <input type="text" id="birthplace" placeholder="Birthplace" required>
+        <textarea id="careerDescription" placeholder="Career Description"></textarea>
+        <input type="number" id="matches" placeholder="Number of Matches" required>
+        <input type="number" id="centuries" placeholder="Centuries" required>
+        <input type="number" id="score" placeholder="Total Score" required>
+        <input type="number" id="wickets" placeholder="Wickets" required>
+        <button type="submit">Add Player</button>
+    </form>
+
+    <h2>Search a Player</h2>
+<input type="text" id="searchInput" placeholder="Enter full name">
+<button id="searchButton">Search</button>
+<div id="searchResults"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>

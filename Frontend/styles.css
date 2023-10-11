@@ -1,0 +1,42 @@
+.container {
+    width: 80%;
+    margin: 2em auto;
+    font-family: Arial, sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea, button {
+    margin-bottom: 1em;
+    padding: 0.5em;
+}
+
+#searchResults {
+    margin-top: 1em;
+}
+
+
+.player-result {
+    border: 1px solid #ccc;
+    padding: 1em;
+    margin: 1em 0;
+}
+
+.player-result h3 {
+    margin-top: 0;
+}
+
+.player-result button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+}
+
+.player-result button:hover {
+    background-color: #45a049;
+}

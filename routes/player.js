@@ -8,7 +8,7 @@ router.get('/:name', playerController.search);
 
 router.post('/', playerController.add);
 
-//router.delete('/:id', playerController.delete);
+router.delete('/:id', playerController.delete);
 
 router.put('/:id', playerController.edit);
 

@@ -23,8 +23,8 @@ exports.edit = async (req, res, next) => {
     res.json();
 }
 
-// exports.delete = async (req, res, next) => {
-//     const player = await player.findByPk(req.params.id);
-//     player.destroy();
-//     res.json();
-// }
+exports.delete = async (req, res, next) => {
+    const player = await Player.findByPk(req.params.id);
+    player.destroy();
+    res.json();
+}

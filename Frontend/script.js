@@ -67,6 +67,7 @@ document.getElementById("searchButton").addEventListener("click", async () => {
             <button onclick='editPlayer(${JSON.stringify(
               player
             )});'>Edit</button>
+            <button onclick='deletePlayer(${player.id});'>Delete</button>
         </div>`;
     } else
       document.getElementById("searchResults").innerHTML = "No results found.";
@@ -91,4 +92,9 @@ function editPlayer(playerData) {
 
     editId = playerData.id;
   }
+}
+
+async function deletePlayer(id) {
+    const res = await axios.delete(api + '/' + id);
+    document.getElementById("searchResults").innerHTML = "";
 }
